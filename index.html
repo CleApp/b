@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>DBH Logistics | Heavy Machinery, Oil & Gas, Global Logistics</title>
+  <!-- Tailwind CSS CDN + Font Awesome + Google Fonts (Inter) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Override default Tailwind to set font & custom color utilities -->
+
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- STICKY NAVIGATION (mobile-first, toggleable) -->
+  <header id="site-header" class="site-header sticky top-0 z-50 bg-[#0B3C5D] shadow-md">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <!-- Logo / Brand -->
+        <div class="flex items-center gap-2">
+          <i class="fas fa-crane text-2xl text-[#F58220]"></i>
+          <span class="brand-text text-white font-bold text-xl tracking-tight">DBH <span class="brand-highlight text-[#F58220]">Logistics</span></span>
+        </div>
+        
+        <!-- Desktop Navigation (hidden on mobile) -->
+        <nav class="hidden md:flex items-center space-x-7 text-white font-medium">
+          <a href="#home" class="nav-link hover:text-[#F58220] transition">Home</a>
+          <a href="#services" class="nav-link hover:text-[#F58220] transition">Services</a>
+          <a href="#fleet" class="nav-link hover:text-[#F58220] transition">Equipment Fleet</a>
+          <a href="#about" class="nav-link hover:text-[#F58220] transition">About Us</a>
+          <a href="#contact" class="nav-link hover:text-[#F58220] transition">Contact</a>
+          <a href="#contact" class="bg-[#F58220] px-5 py-2 rounded-md font-semibold text-white hover:bg-orange-600 transition shadow-md">Get a Quote</a>
+        </nav>
+        
+        <!-- Mobile Menu Button (Hamburger) -->
+        <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      
+      <!-- Mobile Dropdown Menu (toggled) -->
+      <div id="mobile-menu" class="hidden md:hidden flex-col bg-[#0B3C5D] px-4 pb-5 space-y-3 border-t border-[#1f4d6e] mobile-menu-transition">
+        <a href="#home" class="mobile-nav-link text-white py-2 hover:text-[#F58220] transition">Home</a>
+        <a href="#services" class="mobile-nav-link text-white py-2 hover:text-[#F58220] transition">Services</a>
+        <a href="#fleet" class="mobile-nav-link text-white py-2 hover:text-[#F58220] transition">Equipment Fleet</a>
+        <a href="#about" class="mobile-nav-link text-white py-2 hover:text-[#F58220] transition">About Us</a>
+        <a href="#contact" class="mobile-nav-link text-white py-2 hover:text-[#F58220] transition">Contact</a>
+        <a href="#contact" class="bg-[#F58220] text-center px-4 py-2 rounded-md font-bold text-white hover:bg-orange-600 transition w-full inline-block">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-[#0B3C5D] overflow-hidden">
+      <!-- industrial geometric overlay pattern -->
+      <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjAgMjBsLTEwLTEwTDIwIDBsMTAgMTB6TTIwIDIwbDEwIDEwIDAgMTBMMjAgNDB6Ii8+PC9zdmc+')] bg-repeat"></div>
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 py-16 md:py-24 relative z-10">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">Heavy Machinery, Oil & Gas Service, and <span class="text-[#F58220]">Global Logistics</span> Defined.</h1>
+            <p class="text-lg text-gray-200 mt-4 md:mt-6 max-w-lg">DBH Logistics delivers turnkey industrial rentals, high-spec engineering maintenance, and seamless supply chain management.</p>
+            <div class="flex flex-wrap gap-4 mt-8">
+              <a href="#fleet" class="bg-[#F58220] text-white font-bold px-6 py-3 rounded-md shadow-lg hover:bg-orange-600 transition text-center">Explore Fleet <i class="fas fa-arrow-right ml-2"></i></a>
+              <a href="#services" class="border-2 border-white text-white font-bold px-6 py-3 rounded-md hover:bg-white hover:text-[#0B3C5D] transition text-center">Our Services</a>
+            </div>
+          </div>
+          <div class="hidden md:flex justify-center">
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 w-80 border border-white/20">
+              <i class="fas fa-hard-hat text-7xl text-[#F58220] block mb-4"></i>
+              <p class="text-white font-semibold">24/7 Field Support • ISO Certified • Global Reach</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Services Grid (4 Pillars) -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#0B3C5D]">Core Industrial Services</h2>
+          <div class="w-24 h-1 bg-[#F58220] mx-auto mt-4 rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-gray-50 rounded-xl p-6 shadow-sm border-l-4 border-[#F58220] hover:shadow-md transition">
+            <i class="fas fa-tractor text-4xl text-[#F58220] mb-4"></i>            <h3 class="text-xl font-bold text-[#0B3C5D]">Heavy Machinery Rental</h3>
+            <p class="text-gray-600 mt-2">High-capacity cranes, earthmovers, and specialized industrial transport fleet.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-gray-50 rounded-xl p-6 shadow-sm border-l-4 border-[#F58220] hover:shadow-md transition">
+            <i class="fas fa-oil-can text-4xl text-[#F58220] mb-4"></i>
+            <h3 class="text-xl font-bold text-[#0B3C5D]">Oil & Gas Repairs</h3>
+            <p class="text-gray-600 mt-2">API-compliant pipeline fixes, valve overhauls, and rig maintenance support.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-gray-50 rounded-xl p-6 shadow-sm border-l-4 border-[#F58220] hover:shadow-md transition">
+            <i class="fas fa-wrench text-4xl text-[#F58220] mb-4"></i>
+            <h3 class="text-xl font-bold text-[#0B3C5D]">Servicing & Maintenance</h3>
+            <p class="text-gray-600 mt-2">Scheduled preventive care, calibration, and emergency diagnostic shutdowns.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-gray-50 rounded-xl p-6 shadow-sm border-l-4 border-[#F58220] hover:shadow-md transition">
+            <i class="fas fa-truck-ramp-box text-4xl text-[#F58220] mb-4"></i>
+            <h3 class="text-xl font-bold text-[#0B3C5D]">Logistics & Supply Chain</h3>
+            <p class="text-gray-600 mt-2">Freight forwarding, heavy-haul route surveying, and cross-border transport.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Fleet Showcase (Interactive) -->
+    <section id="fleet" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#0B3C5D]">Flagship Equipment Fleet</h2>
+          <p class="text-gray-600 mt-2">Heavy-duty machinery ready for your next project</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 transition hover:shadow-lg">
+            <div class="h-44 bg-[#1f4970] flex items-center justify-center"><i class="fas fa-tractor text-6xl text-[#F58220]"></i></div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-[#0B3C5D]">50-Ton Crawler Crane</h3>
+              <div class="flex gap-3 text-sm text-gray-500 mt-1"><span><i class="fas fa-weight-hanging"></i> 50T Capacity</span><span><i class="fas fa-check-circle text-green-600"></i> Available</span></div>
+              <p class="text-gray-600 text-sm mt-2">Liebherr LR 1100, heavy lifting for infrastructure & refineries.</p>
+              <button onclick="showRentalToast('50-Ton Crawler Crane')" class="mt-4 w-full bg-[#F58220] text-white font-semibold py-2 rounded-md hover:bg-orange-600 transition">Request Rental <i class="fas fa-file-signature ml-1"></i></button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+            <div class="h-44 bg-[#1f4970] flex items-center justify-center"><i class="fas fa-charging-station text-6xl text-[#F58220]"></i></div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-[#0B3C5D]">Industrial Generator Set</h3>
+              <div class="flex gap-3 text-sm text-gray-500 mt-1"><span>2.5 MW Prime</span><span><i class="fas fa-check-circle text-green-600"></i> Ready</span></div>
+              <p class="text-gray-600 text-sm mt-2">Caterpillar 3516E, 60Hz emergency backup or prime power.</p>
+              <button onclick="showRentalToast('Industrial Generator Set')" class="mt-4 w-full bg-[#F58220] text-white font-semibold py-2 rounded-md hover:bg-orange-600 transition">Request Rental <i class="fas fa-file-signature ml-1"></i></button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+            <div class="h-44 bg-[#1f4970] flex items-center justify-center"><i class="fas fa-dumpster-fire text-6xl text-[#F58220]"></i></div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-[#0B3C5D]">Heavy-Duty Articulated Dump Truck</h3>
+              <div class="flex gap-3 text-sm text-gray-500 mt-1"><span>40m³ Heaped</span><span><i class="fas fa-calendar-alt"></i> Short/Long Term</span></div>
+              <p class="text-gray-600 text-sm mt-2">Volvo A60H, rugged terrain mining & <dd></dd> earthmoving.</p>
+              <button onclick="showRentalToast('Articulated Dump Truck')" class="mt-4 w-full bg-[#F58220] text-white font-semibold py-2 rounded-md hover:bg-orange-600 transition">Request Rental <i class="fas fa-file-signature ml-1"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust & About Us Section + metrics counters (dynamic) -->
+    <section id="about" class="py-16 md:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-[#F58220] font-semibold tracking-wide">ABOUT DBH LOGISTICS</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#0B3C5D] mt-2">Uncompromising Safety, Zero-Harm Culture</h2>
+            <p class="text-gray-700 mt-4 leading-relaxed">Since our founding, DBH Logistics has been the trusted partner for heavy industrial operations across oil fields, mining sites, and global supply chains. Our certified field engineers and rigorous maintenance protocols guarantee <strong class="text-[#0B3C5D]">99.8% fleet uptime</strong> and real-time emergency response.</p>
+            <p class="text-gray-700 mt-3">We deliver turnkey logistics solutions with industry-leading compliance and operational excellence—anywhere, anytime.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-6 bg-gray-50 p-8 rounded-2xl shadow-sm">
+            <div class="text-center">
+              <div class="text-4xl font-black text-[#F58220] counter-value"><span id="stat1" data-target="99.8">0</span>%</div>
+              <p class="font-semibold text-gray-800 mt-1">Fleet Uptime</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-black text-[#F58220] counter-value"><span id="stat2" data-target="24">0</span>/7</div>
+              <p class="font-semibold text-gray-800 mt-1">Support Availability</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-black text-[#F58220] counter-value"><span id="stat3" data-target="0">0</span></div>
+              <p class="font-semibold text-gray-800 mt-1">Zero-Harm Safety Record (LTI)</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-black text-[#F58220] counter-value"><span id="stat4" data-target="150">0</span>+</div>
+              <p class="font-semibold text-gray-800 mt-1">Active Field Engineers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lead Generation & Contact Form (split layout + simulated success toast) -->
+    <section id="contact" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 bg-white rounded-2xl shadow-xl overflow-hidden">
+          <!-- Left side details -->
+          <div class="bg-[#0B3C5D] p-8 md:p-10 text-white">
+            <h3 class="text-2xl font-bold flex items-center gap-2"><i class="fas fa-map-marker-alt text-[#F58220]"></i> Headquarters</h3>
+            <p class="mt-4 opacity-90">4800 Industrial Parkway, Houston, TX 77047</p>
+            <div class="mt-6 space-y-3">
+              <p><i class="fas fa-phone-alt text-[#F58220] w-6"></i> +1 (888) 455-HEAVY (4329)</p>
+              <p><i class="fas fa-envelope text-[#F58220] w-6"></i> dispatch@dbhlogistics.com</p>
+              <p><i class="fas fa-clock text-[#F58220] w-6"></i> 24/7 Operational Dispatch – Open 365 days</p>
+            </div>
+            <div class="mt-8 border-t border-white/20 pt-6">
+              <p class="font-semibold">Emergency Field Service:</p>
+              <p class="text-xl font-bold text-[#F58220]">+1 (888) 974-2900</p>
+            </div>
+          </div>
+          <!-- Right side contact form -->
+          <div class="p-8 md:p-10">
+            <h3 class="text-2xl font-bold text-[#0B3C5D]">Request a Quote or Support</h3>
+            <p class="text-gray-500 text-sm mb-6">Fill out the form and we’ll respond within 1 hour.</p>
+            <form id="contactForm" novalidate>
+              <div class="grid sm:grid-cols-2 gap-4 mb-4">
+                <div><input type="text" id="name" placeholder="Full Name*" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#F58220] outline-none"></div>
+                <div><input type="text" id="company" placeholder="Company*" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#F58220] outline-none"></div>
+              </div>
+              <div class="mb-4"><input type="email" id="email" placeholder="Business Email*" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#F58220] outline-none"></div>
+              <div class="mb-4">
+                <select id="serviceNeeded" class="w-full border rounded-lg p-3 bg-white focus:ring-2 focus:ring-[#F58220] outline-none">
+                  <option value="">Select Service Needed</option>
+                  <option>Rental - Heavy Equipment</option>
+                  <option>Oil & Gas Repairs</option>
+                  <option>Servicing & Maintenance</option>
+                  <option>Logistics & Freight</option>
+                </select>
+              </div>
+              <div class="mb-5"><textarea id="message" rows="3" placeholder="Project details / Message*" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#F58220] outline-none"></textarea></div>
+              <button type="submit" class="bg-[#F58220] w-full font-bold text-white py-3 rounded-lg hover:bg-orange-600 transition shadow-md">Submit Request <i class="fas fa-paper-plane ml-2"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Dark Corporate Blue -->
+  <footer class="bg-[#0B3C5D] text-gray-300 pt-12 pb-6">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div><span class="text-white text-xl font-bold">DBH <span class="text-[#F58220]">Logistics</span></span><p class="text-sm mt-2">Heavy industrial solutions, worldwide.</p></div>
+        <div><h4 class="font-semibold text-white">Quick Links</h4><ul class="space-y-1 mt-2 text-sm"><li><a href="#home" class="hover:text-[#F58220]">Home</a></li><li><a href="#services" class="hover:text-[#F58220]">Services</a></li><li><a href="#fleet" class="hover:text-[#F58220]">Fleet</a></li></ul></div>
+        <div><h4 class="font-semibold text-white">Support</h4><ul class="space-y-1 mt-2 text-sm"><li><a href="#contact" class="hover:text-[#F58220]">Emergency Contact</a></li><li><a href="#contact" class="hover:text-[#F58220]">Quote Request</a></li></ul></div>
+        <div><h4 class="font-semibold text-white">Follow Us</h4><div class="flex space-x-4 mt-2 text-xl"><i class="fab fa-linkedin hover:text-[#F58220] cursor-pointer"></i><i class="fab fa-twitter hover:text-[#F58220] cursor-pointer"></i><i class="fab fa-youtube hover:text-[#F58220] cursor-pointer"></i></div></div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm">© 2025 DBH Logistics – Heavy Industry & Oil Services. All rights reserved.</div>
+    </div>
+  </footer>
+  
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 z-50 opacity-0 transition-all duration-300 pointer-events-none" style="background-color: #0B3C5D; border-left: 5px solid #F58220;"></div>
+<script src="script.js"></script>
+</body>
+</html>

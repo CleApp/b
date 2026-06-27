@@ -1,0 +1,51 @@
+    * { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    html { scroll-behavior: smooth; }
+    /* custom orange accent for buttons, borders, active states */
+    .hover\:bg-orange-600:hover { background-color: #e67312; }
+    .focus\:ring-orange-500:focus { box-shadow: 0 0 0 4px rgba(245, 130, 32, 0.5); }
+    /* transition for mobile menu */
+    .mobile-menu-transition { transition: all 0.3s ease-in-out; }
+    .site-header {
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+    }
+    .site-header .nav-link,
+    .site-header .mobile-nav-link,
+    .site-header #mobile-menu-btn,
+    .site-header .brand-text {
+      color: #ffffff;
+      transition: color 0.3s ease;
+    }
+    .site-header.scrolled {
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(11, 60, 93, 0.12);
+    }
+    .site-header.scrolled .nav-link,
+    .site-header.scrolled .mobile-nav-link,
+    .site-header.scrolled #mobile-menu-btn,
+    .site-header.scrolled .brand-text {
+      color: #0B3C5D;
+    }
+    .site-header.scrolled .brand-highlight {
+      color: #F58220;
+    }
+    .site-header.scrolled .nav-link:hover,
+    .site-header.scrolled .mobile-nav-link:hover {
+      color: #F58220;
+    }
+    .site-header.scrolled #mobile-menu {
+      background-color: rgba(255, 255, 255, 0.97);
+    }
+    /* custom toast animation */
+    .toast-slide {
+      animation: slideUpFade 0.3s ease forwards;
+    }
+    @keyframes slideUpFade {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    /* simple counter number increment style */
+    .counter-value {
+      font-feature-settings: "tnum";
+      font-variant-numeric: tabular-nums;
+    }
